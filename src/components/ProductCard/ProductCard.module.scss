@@ -1,0 +1,62 @@
+@import "../../common/mixins.scss";
+.img_box {
+  flex-basis: 50%;
+
+  @include respond(tab-land) {
+    flex: 1;
+  }
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.description_box {
+  flex: 1;
+
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.new {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  color: var(--color-primary);
+  margin-bottom: 1.4rem;
+
+  @include respond(phone) {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.product_name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-black);
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  margin-bottom: 2.4rem;
+  max-width: 10ch;
+
+  @include respond(phone) {
+    max-width: 100%;
+    padding: 0 3.2rem;
+  }
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 45ch;
+
+  margin-bottom: 3.2rem;
+
+  @include respond(phone) {
+    max-width: 100%;
+
+    font-size: 1.8rem;
+  }
+}

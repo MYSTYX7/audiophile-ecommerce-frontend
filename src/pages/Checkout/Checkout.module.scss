@@ -1,0 +1,73 @@
+@import "../../common/mixins.scss";
+
+.checkout_container {
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+
+  gap: 2.8rem;
+  margin-top: 6.4rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    margin-top: 0rem;
+  }
+}
+
+.checkout_form {
+  background-color: white;
+  padding: 4.8rem 3.2rem;
+  border-radius: 0.5rem;
+}
+
+.checkout_summary {
+  padding: 4.8rem 3.2rem;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.summary_heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-black);
+}
+
+.cart_items_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.price_calculation_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.amount {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  font-weight: 700;
+
+  &__grand {
+    color: var(--color-primary);
+  }
+}

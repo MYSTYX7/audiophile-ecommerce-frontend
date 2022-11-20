@@ -1,0 +1,95 @@
+@import "../../common/mixins.scss";
+
+.categories {
+  margin-top: var(--margin-top-big);
+
+  display: flex;
+  gap: 2.4rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
+
+.category_card {
+  position: relative;
+  flex: 1;
+  background-color: var(--color-grey-1);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11rem;
+  padding-bottom: 2.4rem;
+
+  @include respond(tab-land) {
+    padding-top: 9rem;
+  }
+
+  @include respond(phone) {
+    padding-top: 10rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+.img_box {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+
+  @include respond(tab-land) {
+    transform: translate(-50%, 18%);
+  }
+
+  @include respond(phone) {
+    transform: translate(-50%, 25%);
+  }
+}
+
+.category_img {
+  width: 20rem;
+
+  @include respond(tab-land) {
+    width: 15rem;
+  }
+
+  @include respond(phone) {
+    width: 16rem;
+  }
+}
+
+.category_name {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--color-black);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.category_link {
+  color: inherit;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: all 0.2s;
+  span {
+  }
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.icon_arrow {
+  display: block;
+  width: 0.8rem;
+}
