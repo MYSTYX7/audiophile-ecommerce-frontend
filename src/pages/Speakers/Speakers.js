@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Speakers.module.scss";
 import { useSelector } from "react-redux";
 
 import FeaturesBox from "../../components/FeaturesBox/FeaturesBox";

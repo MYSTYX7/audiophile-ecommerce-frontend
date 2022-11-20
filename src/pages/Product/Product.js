@@ -22,7 +22,7 @@ const Product = () => {
 
   if (data.status !== "success") return;
 
-  const [productData] = data.products.filter((item) => item.slug == product);
+  const [productData] = data.products.filter((item) => item.slug === product);
 
   const cart = () => {
     dispatch(addToCart({ ...productData, quantity: quantity }));
@@ -53,7 +53,7 @@ const Product = () => {
   const renderSuggestedItems = () => {
     return productData.others.map((item, index) => {
       const [category] = data.products.filter(
-        (product) => product.slug == item.slug
+        (product) => product.slug === item.slug
       );
 
       return (

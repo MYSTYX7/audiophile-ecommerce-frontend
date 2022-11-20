@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import styles from "./Headphones.module.scss";
 import FeaturesBox from "../../components/FeaturesBox/FeaturesBox";
 import Categories from "../../components/Categories/Categories";
 import CategoryHeading from "../../components/CategoryHeading/CategoryHeading";
