@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import styles from "./Form.module.scss";
 import codIcon from "../../assets/icons/icon-cod.svg";
 import { useForm } from "react-hook-form";
